@@ -1,0 +1,3 @@
+let findAllPermutations = () => {
+  return string
+}
