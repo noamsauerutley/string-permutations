@@ -1,0 +1,26 @@
+{
+  "name": "string-permutations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stringPermutations.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noamsauerutley/string-permutations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noamsauerutley/string-permutations/issues"
+  },
+  "homepage": "https://github.com/noamsauerutley/string-permutations#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
