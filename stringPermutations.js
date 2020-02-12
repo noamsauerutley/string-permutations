@@ -1,10 +1,14 @@
 let findPermutations = (string) => {
-if (string.length < 2){
+  if (!string || !string.length || typeof string !== "string"){
+    return "Please enter a string"
+  }
+
+if (!!string.length && string.length < 2 ){
     return string
   }
 
   let permutationsArray = [] 
-  
+   
   for (let i = 0; i < string.length; i++){
     let char = string[i]
 

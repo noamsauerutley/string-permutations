@@ -39,6 +39,25 @@ describe("#findPermutations", () =>{
    let output = findPermutations(input)
     expect(output.length).toEqual(12)
     expect(output).toEqual(["aabc", "aacb", "abac", "abca", "acab", "acba", "baac", "baca", "bcaa", "caab", "caba", "cbaa"])
-
  })
+ test("It returns an error message if the string is empty", () => {
+   let input = ""
+   let output = findPermutations(input)
+   expect(output).toEqual("Please enter a string")
+ })
+ test("It returns an error message if the input is not a string", () => {
+  let input = 7
+  let output = findPermutations(input)
+  expect(output).toEqual("Please enter a string")
+})
+test("It returns an error message if the string is null", () => {
+  let input = null
+  let output = findPermutations(input)
+  expect(output).toEqual("Please enter a string")
+})
+test("It returns an error message if the string is undefined", () => {
+  let input = undefined
+  let output = findPermutations(input)
+  expect(output).toEqual("Please enter a string")
+})
 })
