@@ -1,9 +1,9 @@
-const findAllPermutations = require('../stringPermutations')
+const findPermutations = require('../stringPermutations')
 
-describe("#findAllPermutations", () =>{
-  test("it returns all permutations of a string", () => {
+describe("#findPermutations", () =>{
+  test("it returns all permutations of a multicharacter string", () => {
     let input = "abc"
-    let output = findAllPermutations(input)
+    let output = findPermutations(input)
     expect(output.length).toEqual(6)
     expect(output).toContain("abc")
     expect(output).toContain("acb")
@@ -11,5 +11,10 @@ describe("#findAllPermutations", () =>{
     expect(output).toContain("bca")
     expect(output).toContain("cab")
     expect(output).toContain("cba")
+ })
+ test("it returns all permutations of a single character string", () => {
+   let input = "a"
+   let output = findPermutations(input)
+   expect(output).toEqual("a")
  })
 })

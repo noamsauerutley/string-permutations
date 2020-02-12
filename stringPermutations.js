@@ -1,4 +1,4 @@
-let findAllPermutations = (string) => {
+let findPermutations = (string) => {
 if (string.length < 2){
     return string
   }
@@ -13,10 +13,10 @@ if (string.length < 2){
 
     let remainder = string.slice(0, i) + string.slice(i + 1, string.length)
 
-    for (let permutation of findAllPermutations(remainder)){
+    for (let permutation of findPermutations(remainder)){
       permutationsArray.push(char + permutation) }
   }
   return permutationsArray
 }
 
-module.exports = findAllPermutations
+module.exports = findPermutations
