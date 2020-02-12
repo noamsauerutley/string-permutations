@@ -1,5 +1,5 @@
 let findPermutations = (string) => {
-  if (!string || !string.length || typeof string !== "string"){
+  if (!string || typeof string !== "string"){
     return "Please enter a string"
   }
 
