@@ -17,4 +17,28 @@ describe("#findPermutations", () =>{
    let output = findPermutations(input)
    expect(output).toEqual("a")
  })
+ test("it returns all permutations of a multicharacter string with repeating characters", () => {
+   let input = "aabc"
+   let output = findPermutations(input)
+   expect(output.length).toEqual(12)
+   expect(output).toContain("aabc")
+   expect(output).toContain("aacb") 
+   expect(output).toContain("abac") 
+   expect(output).toContain("abca") 
+   expect(output).toContain("acab") 
+   expect(output).toContain("acba") 
+   expect(output).toContain("baac") 
+   expect(output).toContain("baca") 
+   expect(output).toContain("bcaa") 
+   expect(output).toContain("caab") 
+   expect(output).toContain("caba") 
+   expect(output).toContain("cbaa")
+ })
+ test("it returns the output in lexographically sorted order", () => {
+   let input = "aabc"
+   let output = findPermutations(input)
+    expect(output.length).toEqual(12)
+    expect(output).toEqual(["aabc", "aacb", "abac", "abca", "acab", "acba", "baac", "baca", "bcaa", "caab", "caba", "cbaa"])
+
+ })
 })
