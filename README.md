@@ -3,7 +3,10 @@
 
 <p>
 Solution code and test suite for <a href="https://levelup.gitconnected.com/find-all-permutations-of-a-string-in-javascript-af41bfe072d2">Find All Permutations of a String in Javascript</a>, a JavaScript language solution for the String Permutations algorithm challenge, using recursive trees & master theorem.
-  <br><br>
+  <br><br/>
+  Run tests with the terminal command: 'npm test'
+  <br><br/>
+
   Published by <a href="https://levelup.gitconnected.com/">∞ Level Up Coding</a><br>
   Featured by <a href="https://medium.com/topic/javascript">★ Medium Curated</a></p>
 <hr>
