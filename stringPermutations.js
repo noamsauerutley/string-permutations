@@ -3,7 +3,7 @@ let findPermutations = (string) => {
     return "Please enter a string"
   }
 
-if (!!string.length && string.length < 2 ){
+  if (!!string.length && string.length < 2 ){
     return string
   }
 
